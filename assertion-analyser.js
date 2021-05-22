@@ -50,7 +50,7 @@ function replacer(str) {
 
 function splitter(str) {
   // split on commas, then restore the objects
-  const strObj = replacer(str);
+ const strObj = replacer(str);
   let args = strObj.str.split(",");
   args = args.map(function (a) {
     let m = a.match(/__#(\d+)/);
